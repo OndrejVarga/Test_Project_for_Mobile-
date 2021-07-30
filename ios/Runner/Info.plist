@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>speech_to_text</string>
+	<string>Speech-To-Text-To-Speech</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>speech Recognition Usage Description</string>
 	<key>NSMicrophoneUsageDescription </key>

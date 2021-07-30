@@ -11,7 +11,7 @@
   </queries> 
 
    <application
-        android:label="speech_to_text"
+        android:label="Speech-To-Text-To-Speech"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
