@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:speech_to_text_project/utils/speech_to_text_controller.dart';
 import 'package:speech_to_text_project/utils/text_to_speech_controller.dart';
+import 'package:speech_to_text_project/widgets/privacy_policy.dart';
 
 class HomePage extends StatefulWidget {
   /*
@@ -123,7 +124,23 @@ class _HomePageState extends State<HomePage> {
                   maxLines: 50,
                   keyboardType: TextInputType.multiline,
                 ),
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              TextButton(
+                  onPressed: () => showDialog(
+                      context: context,
+                      builder: (ctx) {
+                        return PrivacyPolicy(mdFileName: 'privacy_policy.md');
+                      }),
+                  child: Text(
+                    'Privacy Policy',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline1
+                        ?.copyWith(fontSize: 10),
+                  ))
             ],
           ),
         ),
